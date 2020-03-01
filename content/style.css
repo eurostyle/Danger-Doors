@@ -1,0 +1,79 @@
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: #c3eeff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav h1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  font-size: 30px;
+  font-family: "Merienda One";
+  color: #f6d56d;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .window1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 201px;
+  height: 201px;
+  background-color: coral;
+  border: 1px solid black;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.wrapper .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  width: 60%;
+  border: 1px solid black;
+  background-color: #c3eeff;
+  margin: auto;
+}
+
+.wrapper .box .text {
+  width: 140px;
+  height: 40px;
+  text-align: center;
+}
+
+.wrapper .box .submit {
+  width: 60px;
+}
+/*# sourceMappingURL=style.css.map */
