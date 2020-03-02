@@ -1,54 +1,57 @@
-nav {
-  width: 100%;
-  height: 70px;
-  background-color: #c3eeff;
-  display: flex;
-  justify-content: center;
+html {
+  background-color: #fff7c2;
 
-  h1 {
-    align-items: center;
-    margin: auto;
-    font-size: 30px;
-    font-family: "Merienda One";
-    color: #f6d56d;
+  body {
+    background-color: #fff7c2;
   }
 }
 
-.wrapper {
+nav {
+  background-color: #ffa258;
+  color: #fff7c2;
+
+  h1 {
+    padding: 20px 0px;
+  }
+}
+
+main {
+  background-color: #fff7c2;
+
+  .container.myContainter {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    h2 {
+      margin-top: 30px;
+      font-size: 5rem;
+    }
+  }
+}
+.card.myCard {
+  height: 400px;
+  background-color: #4b125c;
+  color: #a02a63;
+}
+.card-body {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
 
-  .window1 {
-    display: flex;
-    width: 201px;
-    height: 201px;
-    background-color: coral;
-    border: 1px solid black;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  .btn {
+    margin-top: auto;
+    background-color: #ffa258;
+    color: #fff7c2;
+    outline: none;
+    border-color: none;
   }
-
-  .box {
-    display: flex;
-    justify-content: center;
-    height: auto;
-    width: 60%;
-    border: 1px solid black;
-    background-color: #c3eeff;
-    margin: auto;
-
-    .text {
-      width: 140px;
-      height: 40px;
-      text-align: center;
-    }
-    .submit {
-      width: 60px;
-    }
+  .btn:hover {
+    background-color: #a02a63;
+  }
+  .btn-primary:hover {
+    border-color: #a02a63;
+  }
+  .btn-primary {
+    border-color: #a02a63;
+    outline: none;
   }
 }
