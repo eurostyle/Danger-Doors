@@ -18,7 +18,7 @@ nav {
 main {
   background-color: #fff7c2;
 
-  .container.myContainter {
+  .myContainter {
     margin-top: 50px;
     margin-bottom: 50px;
 
@@ -42,7 +42,6 @@ main {
     background-color: #ffa258;
     color: #fff7c2;
     outline: none;
-    //border-color: none;
   }
   .btn:hover {
     background-color: #a02a63;
@@ -53,5 +52,20 @@ main {
   .btn-primary {
     border-color: #a02a63;
     outline: none;
+    background-color: #ffa258;
   }
+}
+.myBtn:active,
+.myBtn:focus {
+  background-color: #ffa258 !important;
+  color: #fff7c2 !important;
+  border-color: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #a02a63 !important;
+}
+
+.myContainter {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
