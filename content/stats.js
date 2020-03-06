@@ -41,7 +41,7 @@ function levelCheckToAdvance() {
       correctGuessTmp = 0;
       incorrectGuessTmp = 0;
       return level.innerHTML++;
-    } else if (level.innerHTML != 1) {
+    } else if (level.innerHTML != 0) {
       totalGuessTmp = 0;
       correctGuessTmp = 0;
       incorrectGuessTmp = 0;
