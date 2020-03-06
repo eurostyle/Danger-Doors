@@ -56,16 +56,18 @@ function levelCheckToAdvance() {
 // event listeners to check if cards matches generated random number
 button1.addEventListener("click", function() {
   if (generateRandomNum() === 1) {
-    card1.style = "background-color: Darkred;"; // timer to reverse card back to original color
+    card1.style = "background-color: Darkred;";
     incorrectEntriesCounter++;
     incorrectEntries.innerHTML = incorrectEntriesCounter; //stats
     correctEntriesStreak.innerHTML = 0;
     incorrectGuessTmp++; // resetting internal counter, important for lvl checking
     totalGuessTmp++;
     levelCheckToAdvance();
+    card1.style.animationName = null;
+    card1.style.animationName = "shake";
 
     window.setTimeout(function() {
-      card1.style = "background-color: #4b125c;";
+      card1.style = "background-color: #4b125c;"; // timer to reverse card back to original color
     }, 350);
   } else {
     card1.style = "background-color: Darkgreen;";
@@ -91,6 +93,8 @@ button2.addEventListener("click", function() {
     incorrectGuessTmp++;
     totalGuessTmp++;
     levelCheckToAdvance();
+    card2.style.animationName = null;
+    card2.style.animationName = "shake";
 
     window.setTimeout(function() {
       card2.style = "background-color: #4b125c;";
@@ -111,7 +115,7 @@ button2.addEventListener("click", function() {
 });
 
 button3.addEventListener("click", function() {
-  if (generateRandomNum() === 2) {
+  if (generateRandomNum() === 3) {
     card3.style = "background-color: Darkred;";
     incorrectEntriesCounter++;
     incorrectEntries.innerHTML = incorrectEntriesCounter;
@@ -119,6 +123,8 @@ button3.addEventListener("click", function() {
     incorrectGuessTmp++;
     totalGuessTmp++;
     levelCheckToAdvance();
+    card3.style.animationName = null;
+    card3.style.animationName = "shake";
 
     window.setTimeout(function() {
       card3.style = "background-color: #4b125c;";
