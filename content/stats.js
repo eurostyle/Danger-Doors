@@ -29,10 +29,7 @@ function generateRandomNum() {
 }
 
 function levelCheckToAdvance() {
-  console.log(totalGuessTmp);
   if (totalGuessTmp >= 10) {
-    console.log("viskas veikia");
-    console.log(level.innerHTML);
     if (
       correctGuessTmp - level.innerHTML - incorrectGuessTmp >=
       incorrectGuessTmp
@@ -40,11 +37,13 @@ function levelCheckToAdvance() {
       totalGuessTmp = 0;
       correctGuessTmp = 0;
       incorrectGuessTmp = 0;
+
       return level.innerHTML++;
     } else if (level.innerHTML != 0) {
       totalGuessTmp = 0;
       correctGuessTmp = 0;
       incorrectGuessTmp = 0;
+
       return level.innerHTML--;
     } else {
       totalGuessTmp = 0;
