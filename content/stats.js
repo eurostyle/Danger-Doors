@@ -11,6 +11,8 @@ let button1 = document.getElementById("button1");
 let button2 = document.getElementById("button2");
 let button3 = document.getElementById("button3");
 
+let highScore = document.getElementById("highScore");
+
 let totalPointsCounter = 0;
 let incorrectEntriesCounter = 0;
 totalPoints.innerHTML = 0;
@@ -53,6 +55,12 @@ function levelCheckToAdvance() {
   }
 }
 
+function checkHighScore() {
+  if (highScore.innerHTML < correctEntriesStreak.innerHTML) {
+    highScore.innerHTML = correctEntriesStreak.innerHTML;
+  }
+}
+
 // event listeners to check if cards matches generated random number
 button1.addEventListener("click", function() {
   if (generateRandomNum() === 1) {
@@ -77,6 +85,7 @@ button1.addEventListener("click", function() {
     correctGuessTmp++;
     totalGuessTmp++;
     levelCheckToAdvance();
+    checkHighScore();
 
     window.setTimeout(function() {
       card1.style = "background-color: #4b125c;";
@@ -107,6 +116,7 @@ button2.addEventListener("click", function() {
     correctGuessTmp++;
     totalGuessTmp++;
     levelCheckToAdvance();
+    checkHighScore();
 
     window.setTimeout(function() {
       card2.style = "background-color: #4b125c;";
@@ -137,6 +147,7 @@ button3.addEventListener("click", function() {
     correctGuessTmp++;
     totalGuessTmp++;
     levelCheckToAdvance();
+    checkHighScore();
 
     window.setTimeout(function() {
       card3.style = "background-color: #4b125c;";
