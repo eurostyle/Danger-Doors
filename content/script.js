@@ -8,7 +8,6 @@ const incorrectEntries = document.getElementById("incorrectEntries");
 const correctEntriesStreak = document.getElementById("correctEntries");
 const correctEntrieThisLevel = document.getElementById("correctLevelEntries");
 const incorrectThisLevel = document.getElementById("incorrectLevelEntries");
-const completionChance = document.getElementById("completionChance");
 
 const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
@@ -24,8 +23,7 @@ correctEntriesStreak.innerHTML = 0;
 correctEntrieThisLevel.innerHTML = 0;
 incorrectThisLevel.innerHTML = 0;
 
-//completionChanceTmp = 100;
-//completionChance.innerHTML = `${completionChanceTmp} %`;
+
 
 level.innerHTML = 0;
 
@@ -75,17 +73,9 @@ function checkHighScore() {
 	}
 }
 
-// function in progress, needs to be reworked
-
-function chanceToComepleteLevel() {
-	completionChance.innerHTML = (correctEntrieThisLevel.innerHTML / 10) * 100;
-	console.log(completionChance.innerHTML);
-	return completionChance;
-}
-
 // event listeners to check if cards matches generated random number
 button1.addEventListener("click", function() {
-	chanceToComepleteLevel();
+
 	if (generateRandomNum() === 1) {
 		card1.style = "background-color: Darkred;";
 		incorrectEntriesCounter++;
@@ -119,7 +109,7 @@ button1.addEventListener("click", function() {
 });
 
 button2.addEventListener("click", function() {
-	chanceToComepleteLevel();
+
 	if (generateRandomNum() === 2) {
 		card2.style = "background-color: Darkred;";
 		incorrectEntriesCounter++;
@@ -153,7 +143,7 @@ button2.addEventListener("click", function() {
 });
 
 button3.addEventListener("click", function() {
-	chanceToComepleteLevel();
+
 	if (generateRandomNum() === 3) {
 		card3.style = "background-color: Darkred;";
 		incorrectEntriesCounter++;
